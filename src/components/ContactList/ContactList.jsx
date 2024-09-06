@@ -11,10 +11,9 @@ function ContactList() {
   const contactsFilter = contacts?.filter((contact) =>
     contact.name.toLowerCase().includes(filterValue.toLowerCase())
   );
-
   return (
     <ul className={css.list}>
-      {contactsFilter.map((contact) => (
+      {contactsFilter?.map((contact) => (
         <Contact
           key={contact.id}
           id={contact.id}

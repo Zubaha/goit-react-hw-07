@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import * as Yup from "yup";
 
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsOps";
 
 const phoneRegExp = /^[1-9]{3}-[0-9]{2}-[0-9]{2}$/;
 const validationSchema = Yup.object({
